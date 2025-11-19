@@ -1,1 +1,2 @@
-llamaIndex
+llama-index
+openai
