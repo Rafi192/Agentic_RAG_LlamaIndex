@@ -16,3 +16,8 @@ THe LLM decies:
 
 
 # Key concepts:
+- Routing : Directing queries to appropriate data sources
+- Tool calling : LLm selecting and using functions
+- Reasoning loop: Iterative decision-making process
+- Multi-AGent: Multiple specialized agents collaborating
+
