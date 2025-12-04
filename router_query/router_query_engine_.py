@@ -24,4 +24,15 @@ indexes_data2 = VectorStoreIndex.from_documents(docs_exm_2)
 
 print("data vector index",indexes_data1)
 print("type of the vector--" ,type(indexes_data1))
-print("data index -2 ",indexes_data2)
+
+node_ids = indexes_data1.index_struct.nodes
+# print(dir(indexes_data1.index_struct))
+
+nodes = indexes_data1.docstore.get_nodes(node_ids)
+for node in nodes:
+    print("Node id:", node.node_id)
+    print("embedding vector length", len(node.embedding))
+    print("Embedding first 10 dims:", node.embedding[:10])
+
+
+
