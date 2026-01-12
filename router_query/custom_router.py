@@ -19,6 +19,6 @@ class router(CustomQueryEngine):
         else:
             return self.vector_engine(query_str)
 
-router_rr = router(vector_engine, summary_engine,sql_engine)
+router_rr = router(vector_engine, summary_engine,sql_engine) # router parameters --
 response = router_rr.query("Give me an overview of the document")
         
